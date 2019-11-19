@@ -1,6 +1,6 @@
 FROM mhart/alpine-node:12
 
-LABEL version="1.0.0"
+LABEL version="0.0.1"
 LABEL repository="https://github.com/tacoss/nodejs"
 LABEL homepage="https://github.com/tacoss/nodejs"
 LABEL maintainer="Alvaro Cabrera <pateketrueke@gmail.co>"
