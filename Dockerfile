@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:12
+FROM rastasheep/alpine-node-chromium
 
 LABEL version="0.0.1"
 LABEL repository="https://github.com/tacoss/nodejs"
@@ -10,15 +10,7 @@ LABEL com.github.actions.description="LTS npm with access to Chrome for use on E
 LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="green-dark"
 
-RUN apk update && apk upgrade && \
-    echo @edge http://nl.alpinelinux.org/alpine/edge/community >> /etc/apk/repositories && \
-    echo @edge http://nl.alpinelinux.org/alpine/edge/main >> /etc/apk/repositories && \
-    apk add --no-cache make \
-      chromium@edge \
-      nss@edge \
-      harfbuzz@edge \
-      freetype@edge \
-      ttf-freefont@edge
+RUN apk add --no-cache make
 
 COPY LICENSE README.md /
 COPY "entrypoint.sh" "/entrypoint.sh"
