@@ -1,0 +1,6 @@
+name: 'GitHub Action for NodeJS development'
+description: 'NPM support with Makefile and Chrome (headless)'
+author: 'Alvaro Cabrera <pateketrueke@gmail.com>'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

@@ -24,4 +24,4 @@ COPY LICENSE README.md /
 COPY "entrypoint.sh" "/entrypoint.sh"
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["help"]
+CMD ["build"]
