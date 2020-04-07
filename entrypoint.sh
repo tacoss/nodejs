@@ -2,9 +2,9 @@
 
 set -e
 
+cmd=npm
 if [[ -f Makefile ]]; then
-  sh -c "make $*"
-else
-  sh -c "npm $*"
+  cmd=make
 fi
 
+sh -c "CI=true $cmd $*"
