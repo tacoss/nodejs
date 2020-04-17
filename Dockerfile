@@ -1,4 +1,4 @@
-FROM rastasheep/alpine-node-chromium
+FROM rastasheep/alpine-node-chromium:10-alpine
 
 LABEL version="0.0.1"
 LABEL repository="https://github.com/tacoss/nodejs"
