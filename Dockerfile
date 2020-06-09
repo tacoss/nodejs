@@ -10,7 +10,7 @@ LABEL com.github.actions.description="LTS npm with access to Chrome for use on E
 LABEL com.github.actions.icon="package"
 LABEL com.github.actions.color="green-dark"
 
-RUN apk add --no-cache make git
+RUN apk add --no-cache make curl git
 
 COPY LICENSE README.md /
 COPY "entrypoint.sh" "/entrypoint.sh"
