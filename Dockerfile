@@ -3,7 +3,7 @@ FROM rastasheep/alpine-node-chromium:10-alpine
 LABEL version="0.0.1"
 LABEL repository="https://github.com/tacoss/nodejs"
 LABEL homepage="https://github.com/tacoss/nodejs"
-LABEL maintainer="Alvaro Cabrera <pateketrueke@gmail.co>"
+LABEL maintainer="Alvaro Cabrera <pateketrueke@gmail.com>"
 
 LABEL com.github.actions.name="NPM support with Makefile and Chrome (headless)"
 LABEL com.github.actions.description="LTS npm with access to Chrome for use on E2E-testing"
