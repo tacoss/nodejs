@@ -1,10 +1,5 @@
-#!/bin/sh
+#!/bin/sh -l
 
 set -e
-
-cmd=npm
-if [[ -f Makefile ]]; then
-  cmd=make
-fi
-
-sh -c "CI=true $cmd $*"
+export CI=true
+sh -c "$*"
