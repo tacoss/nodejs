@@ -1,4 +1,4 @@
-FROM rastasheep/alpine-node-chromium:10-alpine
+FROM shivjm/node-chromium-alpine:10
 
 LABEL version="0.0.1"
 LABEL repository="https://github.com/tacoss/nodejs"
@@ -16,4 +16,4 @@ COPY LICENSE README.md /
 COPY "entrypoint.sh" "/entrypoint.sh"
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["build"]
+CMD ["true"]

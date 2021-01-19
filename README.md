@@ -66,10 +66,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: tacoss/nodejs@master
-        env:
-          BROWSER: chromium:headless
         with:
-          args: ci
+          args: make ci
 ```
 
 This workflow will work as-is, no further changes are needed.
