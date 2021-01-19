@@ -59,7 +59,15 @@ The value for `[E2E_CASES]` must point to a folder containing tests, e.g. `e2e/c
 
 ```yml
 name: build
-on: [push]
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+
 jobs:
   build-test:
     runs-on: ubuntu-latest
