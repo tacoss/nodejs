@@ -1,6 +1,6 @@
-FROM shivjm/node-chromium-alpine:12
+FROM shivjm/node-chromium-alpine:14
 
-LABEL version="0.0.2"
+LABEL version="0.0.3"
 LABEL repository="https://github.com/tacoss/nodejs"
 LABEL homepage="https://github.com/tacoss/nodejs"
 LABEL maintainer="Alvaro Cabrera <pateketrueke@gmail.com>"
